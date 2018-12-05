@@ -1,0 +1,171 @@
+body{
+    background-color: black;                   /*background color*/
+}
+
+.head{
+    background-color: yellowgreen;             /*color of the head*/
+
+    height:50px;                                 /*height of the head*/
+    width: 110px;                                /*width of the head*/
+
+    border-top-left-radius: 45px;                /*curve the top left corner of the head*/
+    border-top-right-radius: 45px;               /*curve the top right corner of the head*/
+
+    margin: 0 auto;                              /*move the head to the center on the horizontal axis*/
+    position: relative;                          /*allows me to move the head anywhere on the webpage*/
+    bottom: -295px;                              /*move the head down 295 pixels*/
+                                  
+                                                  /*just as the cursor stops hovering over this element*/
+    transition: transform 300ms;                  /*takes 300ms for the animation to go back to its original state*/
+    transform-origin: bottom left;                /*the pivot*/
+}
+.head:hover{                                      /*when getting hovered over*/
+    transition: transform 300ms;                  /*takes 300ms for the animation to complete when hovered over*/
+    transform: rotate(-15deg);                    /*rotate the element 15 degrees*/
+    transform-origin: bottom left;                /*the pivot*/
+}
+
+.eye1{
+    width: 7px;                               /*width of the eye*/
+    height: 7px;                              /*height of the eye*/
+    background-color: white;                /*color of the eye*/
+
+    border-radius: 100%;                      /*make the eye into a circle*/
+
+    position: relative;                       /*allow me to position the eye in the head*/
+    top: 25px;                                /*move the eye down 25 pixels*/
+    left: 27px;                               /*move the eye left 25 pixels*/
+    
+}
+
+.eye2{
+    width: 7px;                               /*width of the eye*/
+    height: 7px;                              /*height of the eye*/
+    background-color: white;                /*color of the eye*/
+
+    border-radius: 100%;                      /*make the eye into a circle*/
+
+    position: relative;                       /*allow me to position the eye anywhere within the head*/
+    top: 18px;                                /*move the eye down 25 pixels*/
+    left: 71px;                               /*move the eye left 25 pixels*/
+    
+}
+
+.body{
+    background-color: yellowgreen;          /*color of the body*/
+    
+    height: 100px;                            /*height of the body*/
+    width: 110px;                             /*width of the body*/
+
+    margin: 0 auto;                           /*centering the body in the middle of the horizontal axis*/
+    position: relative;                       /*allows me to position the body anywhere on the webpage*/
+    bottom: -300px;                           /*move the body 300 pixels down*/
+
+    border-bottom-left-radius: 20%;           /*make the bottom left corner curve*/
+    border-bottom-right-radius: 20%;          /*make the bottom right corner curve*/
+}
+
+.leg1{
+    background-color: yellowgreen;
+    height: 40px;
+    width: 25px;     
+                             
+    margin: 0 auto;
+
+    border-bottom-left-radius: 50px;           /*make the bottom left corner curve*/
+    border-bottom-right-radius: 50px;          /*make bottom right corner curve*/ 
+
+    position: relative;
+    left: -19px;
+    bottom: -300px;
+}
+
+.leg2{
+    background-color: yellowgreen;
+    height: 40px;
+    width: 25px;                              
+
+    margin: 0 auto;                            /*centering the element in the middle of the webpage*/
+
+    border-bottom-left-radius: 50px;           /*make the bottom left corner curve*/
+    border-bottom-right-radius: 50px;          /*make bottom right corner curve*/ 
+
+    position: relative;
+    left: 19px;
+    bottom: -260px;
+}
+
+.arms1{
+    height: 80px;
+    width: 25px;   
+    background-color: yellowgreen;
+    border-radius: 50px 50px;
+    
+    margin: 0 auto;
+
+    position: relative;
+    left: -73px;
+    bottom: -120px;
+                                                               /*just as the cursor is stops hovering over the element*/
+    transition: transform 300ms;                               /*takes the element 300ms to go back to its original state*/
+    transform-origin: top right;                               /*the pivot*/
+}
+.arms1:hover{                                                  /*when getting hovered over*/
+    transition: transform 300ms;                               /*makes the animation fluid*/
+    transform: rotate(15deg);                                  /*rotate 15 degrees*/
+    transform-origin: top right;                               /*the pivot*/
+}
+
+.arms2{
+
+    height: 80px;
+    width: 25px;   
+    background-color: yellowgreen;
+    border-radius: 50px 50px;
+ 
+    margin: 0 auto;
+
+    position: relative;
+    left: 73px;
+    bottom: -40px;
+                                                               
+                                                               /*just as the cursor is stops hovering over the element*/
+       transition: transform 300ms;                            /*takes the element 300ms to go back to its original state*/
+       transform-origin: top left;                             /*the pivot*/
+}
+.arms2:hover{                                                  /*when getting hovered over*/
+    transition: transform 300ms;                               /*makes the animation fluid*/
+    transform: rotate(-15deg);                                 /*rotate 15 degrees*/
+    transform-origin: top left;                                /*the pivot*/
+ 
+}
+
+.antenna1{
+    width: 2px;
+    height: 30px;
+    margin: 0 auto;                                             /*centering the element before moving it*/
+    background-color: yellowgreen;                   
+  
+    transform: rotate(19deg);
+
+ 
+    position: relative;
+    top: -40px;
+    left: 20px;
+    
+}
+
+.antenna2{
+    width: 2px;
+    height: 30px;
+    margin: 0 auto; 
+    background-color: yellowgreen;
+  
+    transform: rotate(-19deg);
+ 
+    position: relative;
+    top: -70px;
+    left: -20px;
+    
+}
+
